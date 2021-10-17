@@ -1,7 +1,6 @@
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '30 0 * * *'
 
 jobs:
   health_check:
